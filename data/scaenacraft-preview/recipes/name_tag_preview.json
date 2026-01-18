@@ -6,7 +6,7 @@
   ],
   "key": {
     "P": { "item": "minecraft:paper" },
-    "N": { "tag": "minecraft:nuggets" }
+    "N": { "item": "minecraft:copper_nugget" }
   },
   "result": {
     "item": "minecraft:name_tag",

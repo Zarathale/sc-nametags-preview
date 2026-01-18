@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " N ",
-    "P  ",
-    "   "
+    "P  "
   ],
   "key": {
     "P": { "item": "minecraft:paper" },

@@ -1,42 +1,29 @@
-# ScaenaCraft — Name Tags Preview (v0.6)
+# ScaenaCraft Name Tags Preview (Datapack)
 
-This datapack adds a **preview** crafting recipe for **Name Tags** on **Minecraft Java 1.21.11 (Data Pack 94.1)**.
+Test pack for **Minecraft Java 1.21.11** that adds a craftable Name Tag recipe.
 
-It also includes a simple test recipe so you can quickly confirm the pack is actually registering recipes.
+## Included recipes
 
-## What this adds
+### Sanity check: 64 sticks
+- **Input:** 1x Oak Planks
+- **Output:** 64x Sticks
+- Recipe ID: `scaenacraft_preview:test_stick`
 
-### 1) Test recipe (sanity check)
-- **1x Oak Planks** -> **64x Sticks**
-
-### 2) Name Tag preview recipe
-- **1x Paper** + **1x Iron Nugget** -> **1x Name Tag**
-
-Layout (2x2 or crafting table):
+### Name Tag
+- **Input:** 1x Paper + 1x Iron Nugget
+- **Pattern (2x2 or 3x3):**
 
 ```
-[ N ]
-[P  ]
+ N
+P
 ```
+
+- Recipe ID: `scaenacraft_preview:name_tag_preview`
 
 ## Install
+1. Put the zip in: `world/datapacks/`
+2. Run `/reload` or restart.
+3. Verify: `/datapack list`
 
-1. Put the zip into:
-   `world/datapacks/`
-2. In-game or console:
-   - `/reload`
-   - `/datapack list`
-
-## Verify it loaded
-
-Try giving the recipes to yourself:
-
-- `/minecraft:recipe give @p scaenacraft_preview:test_stick`
-- `/minecraft:recipe give @p scaenacraft_preview:name_tag_preview`
-
-If those work, open the recipe book and try crafting.
-
-## Notes
-
-- This is meant as a temporary "lean forward" preview. Remove the datapack once the official name tag recipe exists in vanilla.
-- Namespace used: `scaenacraft_preview`
+## Troubleshooting
+If `/minecraft:recipe give @p scaenacraft_preview:test_stick` says **Unknown recipe**, the pack’s files are not being loaded (wrong folder, wrong world, or pack metadata rejected).

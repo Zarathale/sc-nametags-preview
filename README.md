@@ -1,31 +1,42 @@
-# ScaenaCraft – Name Tag Recipe (Preview)
+# ScaenaCraft — Name Tags Preview (v0.6)
 
-This datapack adds a **preview crafting recipe for name tags** on ScaenaCraft.
+This datapack adds a **preview** crafting recipe for **Name Tags** on **Minecraft Java 1.21.11 (Data Pack 94.1)**.
 
-Minecraft has announced craftable name tags in an upcoming Java Edition release. This datapack safely previews that idea **without upgrading the server version**.
+It also includes a simple test recipe so you can quickly confirm the pack is actually registering recipes.
 
-## Recipe (Preview)
+## What this adds
 
-- **Paper**  
-- **Any Nugget** (iron, gold, copper when available)
+### 1) Test recipe (sanity check)
+- **1x Oak Planks** -> **64x Sticks**
 
-→ **Name Tag**
+### 2) Name Tag preview recipe
+- **1x Paper** + **1x Iron Nugget** -> **1x Name Tag**
 
-The recipe uses the vanilla `minecraft:nuggets` item tag, so newly added nugget types will be supported automatically.
+Layout (2x2 or crafting table):
 
-## Installation
+```
+[ N ]
+[P  ]
+```
 
-1. Place this datapack folder (or zip) into your world’s `datapacks/` directory.
-2. Restart the server.
-3. Confirm it is enabled with `/datapack list`.
+## Install
 
-## Important Notes
+1. Put the zip into:
+   `world/datapacks/`
+2. In-game or console:
+   - `/reload`
+   - `/datapack list`
 
-- This is a **preview feature**, not the final vanilla recipe.
-- The recipe may change or be removed when Minecraft releases the official version.
-- Existing name tags will continue to work normally.
+## Verify it loaded
 
-## Scope
+Try giving the recipes to yourself:
 
-This datapack only adds a crafting recipe.  
-It does not modify mobs, trades, loot tables, or game rules.
+- `/minecraft:recipe give @p scaenacraft_preview:test_stick`
+- `/minecraft:recipe give @p scaenacraft_preview:name_tag_preview`
+
+If those work, open the recipe book and try crafting.
+
+## Notes
+
+- This is meant as a temporary "lean forward" preview. Remove the datapack once the official name tag recipe exists in vanilla.
+- Namespace used: `scaenacraft_preview`
